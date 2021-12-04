@@ -1,7 +1,6 @@
 #pragma once
 #include "Point.h"
 
-
 class Sqaure : public Point
 {
 public:
@@ -15,10 +14,10 @@ public:
 		cout << "Square:\nEnter x: ";
 		double a;
 		cin >> a;
-		Point::setX(a);
+		this->setX(a);
 		cout << "Enter y: ";
 		cin >> a;
-		Point::setY(a);
+		this->setY(a);
 		cout << "Enter height: ";
 		cin >> a;
 		setHeight(a);
@@ -28,7 +27,7 @@ public:
 	}
 	void output()
 	{
-		cout << "Sqaure's area: " << area() << " Coordinates: (" << Point::getX() << "," << Point::getY() << ")\n";
+		cout << "Sqaure's area: " << area() << " Coordinates: (" << this->getX() << "," << this->getY() << ")\n";
 	}
 	double area()
 	{
@@ -36,7 +35,7 @@ public:
 	}
 	void move(double dx, double dy)
 	{
-		Point::move(dx, dy);
+		this->move(dx, dy);
 	}
 	void setHeight(double a)
 	{
@@ -46,10 +45,7 @@ public:
 	{
 		width = a;
 	}
-	void output()
-	{
 
-	}
 private:
 	double width;
 	double height;

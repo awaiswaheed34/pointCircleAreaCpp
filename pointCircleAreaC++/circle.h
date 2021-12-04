@@ -13,10 +13,10 @@ public:
 		cout << "Cicle:\nEnter x: ";
 		double a;
 		cin >> a;
-		Point::setX(a);
+		this->setX(a);
 		cout << "Enter y: ";
 		cin >> a;
-		Point::setY(a);
+		this->setY(a);
 		cout << "Enter radius: ";
 		cin >> a;
 		setRadius(a);
@@ -28,16 +28,16 @@ public:
 	}
 	void output()  	
 	{
-		cout << "Circle's area: " << area() << " Coordinates: (" << Point::getX() << "," << Point::getY() << ")\n";
+		cout << "Circle's area: " << area() << " Coordinates: (" << this->getX() << "," << this->getY() << ")\n";
 	}
 
-	double area() const 
+	double area() 
 	{
 		return 3.14 * radius * radius;
 	}
 	void move(double dx, double dy)
 	{
-		Point::move(dx, dy);
+		this->move(dx, dy);
 	}
 private:
 	double radius;
