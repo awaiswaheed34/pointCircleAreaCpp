@@ -22,7 +22,9 @@
     <ClCompile Include="lab9_main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="circle.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="Sqaure.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

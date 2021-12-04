@@ -23,5 +23,11 @@
     <ClInclude Include="Point.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="circle.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sqaure.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
