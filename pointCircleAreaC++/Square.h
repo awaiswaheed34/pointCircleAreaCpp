@@ -1,10 +1,10 @@
 #pragma once
 #include "Point.h"
 
-class Sqaure : public Point
+class Square : public Point
 {
 public:
-	Sqaure(double xcoord = 0.0, double ycoord = 0.0, double w = 0, double h = 0) :Point(xcoord, ycoord)
+	Square(double xcoord = 0.0, double ycoord = 0.0, double w = 0, double h = 0) :Point(xcoord, ycoord)
 	{
 		width = w;
 		height = h;
@@ -27,7 +27,7 @@ public:
 	}
 	void output()
 	{
-		cout << "Sqaure's area: " << area() << " Coordinates: (" << this->getX() << "," << this->getY() << ")\n";
+		cout << "Square's area: " << area() << " Coordinates: (" << this->getX() << "," << this->getY() << ")\n";
 	}
 	double area()
 	{
